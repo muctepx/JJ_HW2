@@ -10,7 +10,7 @@ public class Dog extends Animal{
         this.height = height;
     }
 
-    public void makeSound(){
+    privat void makeSound(){
         System.out.println("Dog Bark");
     }
 
