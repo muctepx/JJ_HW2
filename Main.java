@@ -36,6 +36,7 @@ public class Main {
             Class<?> clazz = animal.getClass();
             try {
                 Method checkMethod = clazz.getDeclaredMethod("makeSound");
+                checkMethod.setAccessible(true);
                 checkMethod.invoke(animal);
 
             } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
